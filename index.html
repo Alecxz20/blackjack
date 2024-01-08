@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackjack - Vite</title>
+  </head>
+  <body class="bg-[#2f4f30] text-white">
+    <header>
+      <h1 class="text-4xl text-center bg-black text-white p-5">Blackjack</h1>
+    </header>
+    <div class="mt-4 flex justify-center gap-4 w-[90%] mx-auto">
+      <button
+        id="new-game"
+        class="bg-green-300 text-black py-2 px-4 rounded-md"
+      >
+        New game
+      </button>
+      <button
+        id="draw-card"
+        class="bg-blue-300 text-black py-2 px-4 rounded-md disabled:bg-slate-400 transition"
+      >
+        Draw a card
+      </button>
+      <button
+        id="stop-player-turn"
+        class="bg-red-300 text-black py-2 px-4 rounded-md disabled:bg-slate-400 transition"
+      >
+        Stop
+      </button>
+    </div>
+    <div class="w-[90%] mx-auto mt-4 h-56">
+      <h2 class="text-xl">Player1 - <small id="player-score">0</small></h2>
+      <div class="flex workspace">
+        <!-- Player workspace -->
+      </div>
+    </div>
+
+    <div class="w-[90%] mx-auto mt-4 h-56">
+      <h2 class="text-xl">Pc - <small id="pc-score">0</small></h2>
+      <div class="flex workspace">
+        <!--PC workspace -->
+      </div>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
