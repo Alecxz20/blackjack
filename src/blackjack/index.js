@@ -91,7 +91,7 @@ import { deckCards, deckTypes } from './useCases/cards'
   // Display card
   function displayCard(card, workspace) {
     const img = document.createElement('img')
-    img.src = `../assets/cards/${card}.png`
+    img.src = `./assets/cards/${card}.png`
     img.alt = `${card} card`
     img.classList.add('card')
     workspace.appendChild(img)
